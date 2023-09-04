@@ -1,0 +1,15 @@
+---
+const { iconID, label, iconWidth = 40, iconHeight = 40 } = Astro.props;
+---
+
+<div title={label}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    width={iconWidth}
+    height={iconHeight}
+    class={`fill-black dark:fill-white`}
+  >
+    <use href={`/icons.svg#${iconID}`}></use>
+  </svg>
+</div>

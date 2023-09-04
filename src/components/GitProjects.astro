@@ -1,0 +1,42 @@
+---
+const projects = [
+  {
+    href: "https://ajiteshchhatani.github.io/react-components/",
+    thumbnail: "/react-components.png",
+    title: "React components",
+    description: "A repository of common UI components built with React",
+  },
+  {
+    href: "https://ajiteshchhatani.github.io/countries-app-react/",
+    thumbnail: "/react-countries.png",
+    title: "React countries app",
+    description:
+      "A project that fetches countries data from external APIs using React, React Router and React Query",
+  },
+  {
+    href: "https://ajiteshchhatani.github.io/countries-app-react/",
+    thumbnail: "/ui-practice.png",
+    title: "UI practice",
+    description: "A collection of UI layouts built using HTML, CSS and SASS",
+  },
+];
+---
+
+<div class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+  {
+    projects.map((project) => (
+      <a
+        href={project.href}
+        class="flex flex-col min-h-[300px] gap-4 border border-black bg-[#f5f5f5] rounded-sm w-full md:w-[21%] dark:text-black"
+        target="_blank"
+      >
+        <img src={project.thumbnail} />
+
+        <div class="px-4">
+          <h1 class="text-xl">{project.title}</h1>
+          <p class="text-sm">{project.description}</p>
+        </div>
+      </a>
+    ))
+  }
+</div>

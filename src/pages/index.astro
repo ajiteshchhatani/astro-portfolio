@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Experience from "../components/Experience.astro";
+import SideProjects from "../components/SideProjects.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout pageTitle="Ajitesh Chhatani">
+  <div class="flex flex-col gap-6 pb-8">
+    <Header />
+    <About />
+    <Skills />
+    <Experience />
+    <SideProjects />
+    <Footer />
+  </div>
+</BaseLayout>

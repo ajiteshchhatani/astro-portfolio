@@ -1,0 +1,76 @@
+---
+import Icon from "./Icon.astro";
+const iconLinksInfo: { iconID: string; label: string }[] = [
+  {
+    iconID: "html-icon",
+    label: "HTML",
+  },
+  {
+    iconID: "css-icon",
+    label: "CSS",
+  },
+  {
+    iconID: "js-icon",
+    label: "JavaScript",
+  },
+  {
+    iconID: "ts-icon",
+    label: "TypeScript",
+  },
+  {
+    iconID: "react-icon",
+    label: "React",
+  },
+  {
+    iconID: "next-icon",
+    label: "NextJS",
+  },
+  {
+    iconID: "reactrouter-icon",
+    label: "React router",
+  },
+  {
+    iconID: "redux-icon",
+    label: "Redux",
+  },
+  {
+    iconID: "reactquery-icon",
+    label: "React Query",
+  },
+  {
+    iconID: "angular-icon",
+    label: "Angular",
+  },
+  {
+    iconID: "tailwind-icon",
+    label: "Tailwindcss",
+  },
+  {
+    iconID: "sass-icon",
+    label: "Sass",
+  },
+  {
+    iconID: "postgresql-icon",
+    label: "PostgreSQL",
+  },
+  {
+    iconID: "webpack-icon",
+    label: "Webpack",
+  },
+  {
+    iconID: "git-icon",
+    label: "Git",
+  },
+];
+---
+
+<div id="skills">
+  <h1 class="text-xl md:text-2xl mb-4">Skills</h1>
+  <div class="flex flex-wrap gap-2">
+    {
+      iconLinksInfo.map(({ iconID, label }) => (
+        <Icon iconID={iconID} label={label} />
+      ))
+    }
+  </div>
+</div>

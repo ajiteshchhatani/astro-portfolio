@@ -1,0 +1,54 @@
+---
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
+<a class="font-bold text-2xl md:text-sm lg:text-2xl" href="#home"
+  >Ajitesh Chhatani</a
+>
+<ul
+  class="hidden p-0 list-none gap-4 ml-auto md:flex md:flex-row"
+  id="nav-links"
+>
+  <li
+    class="text-xl md:text-sm lg:text-xl text-white bg-[#4166f5] px-4 py-2 rounded-full"
+  >
+    <a href="#skills">Skills</a>
+  </li>
+  <li
+    class="text-xl md:text-sm lg:text-xl text-white bg-[#4166f5] px-4 py-2 rounded-full"
+  >
+    <a href="#experience">Experience</a>
+  </li>
+  <li
+    class="text-xl md:text-sm lg:text-xl text-white bg-[#4166f5] px-4 py-2 rounded-full"
+  >
+    <a href="#side-projects">Side projects</a>
+  </li>
+  <li
+    class="text-xl md:text-sm lg:text-xl text-white bg-[#4166f5] px-4 py-2 rounded-full"
+  >
+    <a href="#socials">Socials</a>
+  </li>
+</ul>
+
+<div class="hidden" id="nav-links-mobile">
+  <ul
+    class="flex flex-col w-full p-0 list-none gap-4 absolute top-[5em] left-0 bg-white border-t border-t-black dark:bg-black dark:border-t-white md:hidden"
+  >
+    <li class="text-xl text-black dark:text-white px-4 py-2">
+      <a href="#skills">Skills</a>
+    </li>
+    <li class="text-xl text-black dark:text-white px-4 py-2">
+      <a href="#experience">Experience</a>
+    </li>
+    <li class="text-xl text-black dark:text-white px-4 py-2">
+      <a href="#side-projects">Side projects</a>
+    </li>
+    <li class="text-xl text-black dark:text-white px-4 py-2">
+      <a href="#socials">Socials</a>
+    </li>
+    <li class="px-4 py-2">
+      <ThemeIcon />
+    </li>
+  </ul>
+</div>

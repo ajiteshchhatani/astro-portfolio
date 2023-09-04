@@ -1,0 +1,13 @@
+---
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
+<nav class="flex items-center justify-between gap-8">
+  <Navigation />
+  <Hamburger />
+  <div class="hidden md:block">
+    <ThemeIcon />
+  </div>
+</nav>

@@ -1,0 +1,43 @@
+---
+import Icon from "./Icon.astro";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="flex flex-col md:flex-row items-center gap-4 justify-between">
+  <p>Developed with <a href="https://astro.build/">Astro</a></p>
+  <p>&copy; {currentYear} Ajitesh Chhatani</p>
+  <div class="flex gap-4 items-center">
+    <a href="mailto:ajiteshchhatani@gmail.com"
+      ><Icon
+        iconID="email-icon"
+        label="Email"
+        iconWidth={24}
+        iconHeight={24}
+      /></a
+    >
+    <a href="https://www.linkedin.com/in/ajitesh-chhatani-269522100/"
+      ><Icon
+        iconID="linkedin-icon"
+        label="LinkedIn"
+        iconWidth={24}
+        iconHeight={24}
+      /></a
+    >
+    <a href="https://github.com/ajiteshchhatani"
+      ><Icon
+        iconID="github-icon"
+        label="Github"
+        iconWidth={24}
+        iconHeight={24}
+      /></a
+    >
+    <a href="https://twitter.com/ajiteshchhatani"
+      ><Icon
+        iconID="x-icon"
+        label="X, formerly Twitter"
+        iconWidth={24}
+        iconHeight={24}
+      /></a
+    >
+  </div>
+</footer>
